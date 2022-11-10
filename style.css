@@ -141,7 +141,6 @@ li {
   transform: scale(0.75);
 }
 
-
 .topbar {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
@@ -224,6 +223,7 @@ li {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
   background-color: var(--background-color);
+  box-shadow: inset 0 0 10px;
 }
 
 #left-main {
