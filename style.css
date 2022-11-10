@@ -123,6 +123,7 @@ li {
 
 .icon {
   fill: var(--white-text);
+  transform: scale(0.75);
 }
 
 
