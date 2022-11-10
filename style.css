@@ -63,10 +63,6 @@ table {
   --main-font-family: 'Quicksand', 'Fira Sans', sans-serif;
 }
 
-div {
-  
-}
-
 h3 {
   font-size: 30px;
   font-family: var(--main-font-family);
@@ -112,6 +108,21 @@ h3 {
   grid-template: repeat(auto-fit, 1fr) / 1fr;
   justify-items: center;
   align-items: center;
+}
+
+ul > li {
+  display: grid;
+  grid-template: repeat(6, 10px) / 60px 50px;
+  align-items: center;
+  
+}
+
+li {
+  font-size: 20px;
+}
+
+.icon {
+  fill: var(--white-text);
 }
 
 
