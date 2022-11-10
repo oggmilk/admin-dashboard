@@ -51,6 +51,7 @@ table {
 /* 
   Fine, I'll do it myself
 */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Quicksand&display=swap');
 
 :root {
   --topbar-height: 150px;
@@ -59,6 +60,7 @@ table {
   --item-spacing: 40px;
   --main-color: #004282;
   --white-text: white;
+  --main-font-family: 'Quicksand', 'Fira Sans', sans-serif;
 }
 
 div {
@@ -66,8 +68,8 @@ div {
 }
 
 h3 {
-  font-weight: bold;
   font-size: 30px;
+  font-family: var(--main-font-family);
 }
 
 .container {
