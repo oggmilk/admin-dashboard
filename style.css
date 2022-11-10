@@ -63,8 +63,22 @@ table {
   --main-font-family: 'Quicksand', 'Fira Sans', sans-serif;
 }
 
-h3 {
+h2 {
+  font-weight: bold;
   font-size: 30px;
+  font-family: var(--main-font-family);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: var(--main-font-family);
+}
+
+p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
   font-family: var(--main-font-family);
 }
 
@@ -110,15 +124,15 @@ h3 {
   align-items: center;
 }
 
-ul > li {
+.side-lists > li {
   display: grid;
-  grid-template: repeat(6, 10px) / 60px 50px;
+  grid-template: repeat(6, 10px) / 45px 80px;
   align-items: center;
   
 }
 
 li {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .icon {
@@ -160,8 +174,13 @@ li {
 
 #user-info {
   display: flex;
-  width: 300px;
+  width: 230px;
   justify-content: space-around;
+  align-items: center;
+}
+
+#bell-icon {
+  transform: scale(0.55);
 }
 
 #bottom-topbar {
@@ -172,9 +191,17 @@ li {
 
 #left-bottom-topbar {
   display: flex;
-  width: 300px;
+  width: 400px;
   justify-content: space-between;
+  align-items: center;
   margin-left: 40px;
+}
+
+#topbar-user-info {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-between;
 }
 
 #right-bottom-topbar > ul {
@@ -229,5 +256,27 @@ li {
   display: grid;
   grid-template: 1fr 20fr 1fr 20fr / 1fr;
   padding: var(--item-spacing);
+  padding-left: 0px;
   gap: var(--item-spacing);
+}
+
+
+/* temp code */
+
+div {
+  border: 1px solid;
+}
+
+#random-circle {
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+#random-circle-2 {
+  background-color: blue;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
 }
