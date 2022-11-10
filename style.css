@@ -60,6 +60,7 @@ table {
   --item-spacing: 40px;
   --main-color: #004282;
   --white-text: white;
+  --background-color: #E8E8E8;
   --main-font-family: 'Quicksand', 'Fira Sans', sans-serif;
 }
 
@@ -155,6 +156,7 @@ li {
 #search-button {
   background: none;
   border: none;
+  transform: scale(0.80);
 }
 
 #searchbar {
@@ -168,7 +170,7 @@ li {
   height: 30px;
   border-radius: 15px;
   margin-left: 5px;
-  background-color: #fff;
+  background-color: var(--background-color);
   padding-left: 8px;
 }
 
@@ -221,6 +223,7 @@ li {
 .main {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
+  background-color: var(--background-color);
 }
 
 #left-main {
@@ -234,6 +237,7 @@ li {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  padding-top: 40px;
 }
 
 #projects {
@@ -255,16 +259,17 @@ li {
   width: 300px;
   display: grid;
   grid-template: 1fr 20fr 1fr 20fr / 1fr;
-  padding: var(--item-spacing);
   padding-left: 0px;
   gap: var(--item-spacing);
+  padding-top: 50px;
 }
+
 
 
 /* temp code */
 
 div {
-  border: 1px solid;
+  border: 0px solid;
 }
 
 #random-circle {
