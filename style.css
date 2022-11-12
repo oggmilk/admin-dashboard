@@ -76,6 +76,12 @@ h3 {
   font-family: var(--main-font-family);
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: var(--main-font-family);
+}
+
 p {
   font-style: italic;
   font-weight: bold;
@@ -102,6 +108,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 25px;
 }
 
 #sidebar-main-buttons > ul{
@@ -140,6 +147,10 @@ li {
 .icon {
   fill: var(--white-text);
   transform: scale(0.75);
+}
+
+#big-icon {
+  transform: scale(1);
 }
 
 .topbar {
