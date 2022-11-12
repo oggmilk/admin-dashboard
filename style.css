@@ -119,6 +119,7 @@ p {
 }
 
 #sidebar-bottom-buttons > ul {
+   height: 200px;
   display: grid;
   grid-template: repeat(auto-fit, 1fr) / 1fr;
   justify-items: center;
@@ -219,6 +220,16 @@ li {
   background-color: var(--main-color);
 }
 
+#bubble-button:hover {
+  box-shadow: inset 0 0 20px var(--main-color), 0 0 5px var(--main-color);
+  outline-offset: 15px;
+}
+
+#bubble-button:active {
+  transform: translateY(2px);
+  background-color: blue;
+}
+
 .main {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
@@ -247,12 +258,15 @@ li {
   gap: calc(var(--item-spacing)*1.5);
   padding: var(--item-spacing);
   overflow: auto;
-  
+  margin-right: 6px;
 }
 
 .item {
   width: var(--item-width);
   height: var(--item-height);
+  border-left: solid var(--main-color);
+  border-radius: 10px;
+  background-color: var(--white-text);
 }
 
 #right-main {
