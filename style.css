@@ -283,12 +283,21 @@ li {
 #right-main {
   width: 300px;
   display: grid;
-  grid-template: 1fr 20fr 1fr 20fr / 1fr;
+  grid-template: 1fr 10fr 1fr 10fr / 1fr;
   padding-left: 0px;
   gap: var(--item-spacing);
   padding-top: 50px;
+  overflow: auto;
+  
 }
 
+.side-box {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: var(--white-text);
+  margin-bottom: 10px;
+}
 
 
 /* temp code */
