@@ -373,11 +373,25 @@ a:active {
   border-bottom: none;
 }
 
+.side-box.bottom {
+  display: grid;
+  grid-template: repeat(1fr, 6)/ 1fr;
+  justify-content: center;
+  
+}
 
-/* temp code */
+.trendy {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -40px;
+}
 
-div {
-  border: 0px solid;
+.username-small {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: var(--main-font-family);
 }
 
 #random-circle {
