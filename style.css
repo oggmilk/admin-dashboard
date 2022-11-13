@@ -48,9 +48,8 @@ table {
 	border-spacing: 0;
 }
 
-/* 
-  Fine, I'll do it myself
-*/
+/* End of CSS reset*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Quicksand&display=swap');
 
 :root {
@@ -122,7 +121,7 @@ p {
   margin: 25px;
 }
 
-#sidebar-main-buttons > ul{
+#sidebar-main-buttons > ul {
   height: 500px;
   display: grid;
   grid-template: repeat(auto-fit, 1fr) / 1fr;
@@ -335,8 +334,6 @@ a:active {
   margin-right: -25px;
 }
 
-
-
 #right-main {
   flex: 1;
   display: grid;
@@ -345,7 +342,6 @@ a:active {
   gap: calc(var(--item-spacing)-10px);
   padding-top: 50px;
   overflow: auto;
-  
 }
 
 .side-box {
@@ -377,7 +373,6 @@ a:active {
   display: grid;
   grid-template: repeat(1fr, 6)/ 1fr;
   justify-content: center;
-  
 }
 
 .trendy {
