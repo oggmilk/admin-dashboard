@@ -314,6 +314,12 @@ a:active {
   transform: scale(1.02);
 }
 
+.item-content {
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+}
+
 .item-buttons {
   align-self: flex-end;
   transform: scale(.65);
