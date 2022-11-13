@@ -308,7 +308,7 @@ a:active {
 
 .side-box {
   width: 250px;
-  height: 300px;
+  height: 32vh;
   border-radius: 10px;
   background-color: var(--white-text);
   margin-bottom: 10px;
