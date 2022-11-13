@@ -57,7 +57,7 @@ table {
   --topbar-height: 150px;
   --item-height: 225px;
   --item-width: 345px;
-  --item-spacing: 20px;
+  --item-spacing: 3vh;
   --main-color: #004282;
   --white-text: white;
   --background-color: #E8E8E8;
@@ -76,10 +76,21 @@ h3 {
   font-family: var(--main-font-family);
 }
 
-p {
+h4 {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: var(--main-font-family);
+}
+
+h5 {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
+  font-family: var(--main-font-family);
+}
+
+p {
+  font-size: 14px;
   font-family: var(--main-font-family);
 }
 
@@ -287,13 +298,32 @@ a:active {
 .item {
   width: var(--item-width);
   height: var(--item-height);
-  border-left: solid 5px var(--main-color);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-left: solid 6.5px var(--main-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: var(--white-text);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.item-buttons {
+  align-self: flex-end;
+  transform: scale(.65);
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: -25px;
+}
+
+
 
 #right-main {
   width: 300px;
