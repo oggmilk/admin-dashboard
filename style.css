@@ -152,7 +152,7 @@ a:hover {
 }
 
 a:active {
-  transform: translateX(20px);
+  transform: translateY(2px);
 }
 
 .topbar {
@@ -192,6 +192,7 @@ a:active {
   width: 230px;
   justify-content: space-around;
   align-items: center;
+  margin-right: 5px;
 }
 
 #bell-icon {
