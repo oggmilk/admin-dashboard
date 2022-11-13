@@ -55,9 +55,9 @@ table {
 
 :root {
   --topbar-height: 150px;
-  --item-height: 200px;
-  --item-width: 300px;
-  --item-spacing: 40px;
+  --item-height: 225px;
+  --item-width: 345px;
+  --item-spacing: 20px;
   --main-color: #004282;
   --white-text: white;
   --background-color: #E8E8E8;
@@ -85,7 +85,7 @@ p {
 
 .container {
   display: grid;
-  grid-template: var(--topbar-height) calc(100vh - var(--topbar-height)) / 200px 1fr;
+  grid-template: var(--topbar-height) calc(100vh - var(--topbar-height)) / 225px 1fr;
 }
 
 .sidebar {
@@ -127,7 +127,7 @@ p {
   align-items: center;
 }
 
-.side-lists > li {
+li > a {
   display: grid;
   grid-template: repeat(6, 10px) / 45px 80px;
   align-items: center;
@@ -145,6 +145,14 @@ li {
 
 #big-icon {
   transform: scale(1.5);
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+a:active {
+  transform: translateX(20px);
 }
 
 .topbar {
@@ -232,7 +240,7 @@ li {
 
 #bubble-button:active {
   transform: translateY(2px);
-  background-color: blue;
+  background-color: #001682;
 }
 
 .main {
@@ -269,8 +277,11 @@ li {
 .item {
   width: var(--item-width);
   height: var(--item-height);
-  border-left: solid var(--main-color);
-  border-radius: 10px;
+  border-left: solid 5px var(--main-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: var(--white-text);
 }
 
@@ -309,7 +320,7 @@ div {
 
 #random-circle-2 {
   background-color: blue;
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
   border-radius: 100px;
 }
