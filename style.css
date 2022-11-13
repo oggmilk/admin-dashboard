@@ -56,8 +56,8 @@ table {
 :root {
   --topbar-height: 150px;
   --item-height: 225px;
-  --item-width: 345px;
-  --item-spacing: 3vh;
+  --item-width: 338px;
+  --item-spacing: 2.75vh;
   --main-color: #004282;
   --white-text: white;
   --background-color: #E8E8E8;
@@ -83,6 +83,12 @@ h4 {
 }
 
 h5 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--main-font-family);
+}
+
+h6 {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
@@ -272,7 +278,7 @@ a:active {
 }
 
 #left-main {
-  flex: 1;
+  flex: 4.5;
   display: flex;
   flex-direction: column; 
 }
@@ -289,7 +295,7 @@ a:active {
   display: grid;
   grid-template: repeat(auto-fit, var(--item-height)) / repeat(auto-fit, var(--item-width));
   justify-content: space-evenly;
-  gap: calc(var(--item-spacing)*1.5);
+  gap: calc(var(--item-spacing)*1.35);
   padding: var(--item-spacing);
   overflow: auto;
   margin-right: 6px;
@@ -332,7 +338,7 @@ a:active {
 
 
 #right-main {
-  width: 300px;
+  flex: 1;
   display: grid;
   grid-template: 1fr 10fr 1fr 10fr / 1fr;
   padding-left: 0px;
@@ -348,6 +354,23 @@ a:active {
   border-radius: 10px;
   background-color: var(--white-text);
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.announcement {
+  height: calc(32vh/3);
+  width: 225px;
+  border-bottom: solid #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.announcement.last {
+  border-bottom: none;
 }
 
 
